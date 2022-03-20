@@ -1,0 +1,148 @@
+$bodyColor: hsl(217, 54%, 11%);
+$cardColor: hsl(216, 50%, 16%);
+$cardNameColor: hsl(0, 0%, 100%);
+$cardDiscColor: hsl(215, 51%, 70%);
+$priceColor: hsl(178, 100%, 50%);
+$softBlue: hsl(215, 32%, 27%);
+$cardRadius: 12.5px;
+
+
+body {
+    background-color: $bodyColor;
+  }
+
+/* Card Area */
+.container {
+    height: 600px;
+    width: 350px;
+    background-color: $cardColor;
+    border-radius: $cardRadius;
+    /* Position Middle */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    /* Box Shadow */
+    -webkit-box-shadow: 0px 8px 15px 17px #071621; 
+    box-shadow: 0px 8px 15px 17px #071621;
+}
+.container .main-image {
+    position: relative;
+}
+.container .main-image div {
+    position: absolute;
+    top: 0;
+    margin-top: 25px;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: $cardRadius;
+    width: 300px;
+    height: 300px;
+    margin-left: 25px;
+    z-index: 999;
+}
+.container .main-image div img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.container .cardName:hover {
+    color: hsl(178, 100%, 50%, 55%);
+    cursor: pointer;
+}
+#nftimg {
+    height: 300px;
+    width: 300px;
+    border-radius: $cardRadius;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.cardName {
+    color: $cardNameColor;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 25px;
+}
+.cardDisc {
+    color: $cardDiscColor;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 25px;
+}
+
+
+/* Pricing and Date Area */
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-left: 0px;
+    border-bottom: 1px solid $cardDiscColor;
+    padding-bottom: 25px;
+}
+.price {
+    color: #00FFF8;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+}
+.time {
+    color: $cardDiscColor;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+}
+.icon {
+    margin-right: 5px;
+}
+
+
+/* Card bottom */
+.cardBottom {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 25px;
+}
+#profileimg {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.cardBottom p {
+    font-size:18px;
+    font-weight: 300;
+    font-family: 'Outfit', sans-serif;
+    color: $cardDiscColor;
+    margin-left: 5px;
+}
+.cardBottom p span {
+    color: white;
+    font-weight: 400;
+}
+.cardBottom p span:hover {
+    color: #00FFF8;
+    cursor: pointer;
+}
+
+
+/* Footer Area */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
